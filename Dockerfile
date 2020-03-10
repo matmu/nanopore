@@ -1,3 +1,5 @@
+# https://hub.docker.com/_/ubuntu
+
 FROM ensemblorg/ensembl-vep:bionic-20200219
 
 RUN apt-get update && apt-get -y install samtools curl
