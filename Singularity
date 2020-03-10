@@ -15,6 +15,8 @@ Available programs:
   guppy_aligner (CPU version)
   guppy_barcoder (CPU version)
 
+A minimap2 index for reference genome Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz is available at /opt/Homo_sapiens.GRCh38.dna.primary_assembly.mmi
+
 %environment
     export PATH=/opt/nanopolish:/opt/ont-guppy-cpu/bin:/opt/nanopolish/minimap2:${PATH}
 
