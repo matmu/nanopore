@@ -1,6 +1,9 @@
 Bootstrap: docker
 From: matmu/nanopore:latest
 
+%labels
+Maintainer Matthias Munz <m.munz@uni-luebeck.de>
+
 %help
 Software for analysing Nanopore sequencing data.
 Available programs: 
