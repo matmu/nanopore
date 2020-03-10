@@ -13,5 +13,4 @@ Available programs:
   guppy_barcoder (CPU version)
 
 %environment
-    SINGULARITYENV_PREPEND_PATH=/opt/nanopolish:/opt/ont-guppy-cpu/bin:/opt/ont-guppy-cpu/minimap2
-    export SINGULARITYENV_PREPEND_PATH
+    export PATH=/opt/nanopolish:/opt/ont-guppy-cpu/bin:/opt/nanopolish/minimap2:${PATH}
