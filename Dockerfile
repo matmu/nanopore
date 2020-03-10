@@ -5,4 +5,6 @@ RUN pip3 install medaka gdown
 RUN git clone --recursive https://github.com/jts/nanopolish.git /opt/nanopolish && make -C /opt/nanopolish
 RUN gdown https://drive.google.com/uc?id=1mmuWkbBtbmMPKJk1rXF-o080ipJYa5Wc -O /opt/ont-guppy-cpu_3.4.5_linux64.tar.gz && tar xzf /opt/ont-guppy-cpu_3.4.5_linux64.tar.gz -C /opt && rm /opt/ont-guppy-cpu_3.4.5_linux64.tar.gz
 
+RUN wget http://ftp.ebi.ac.uk/ensemblorg/pub/current_fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa.gz -O /opt && gunzip /opt/Homo_sapiens.GRCh38.dna.toplevel.fa.gz && /opt/nanopolish/minimap2/minimap2 -d /opt/reference/Homo_sapiens.GRCh38.dna.toplevel.mmi /opt/Homo_sapiens.GRCh38.dna.toplevel.fa
+
 ENV PATH /opt/nanopolish:/opt/nanopolish/minimap2:/opt/ont-guppy-cpu/bin:${PATH}
