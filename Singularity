@@ -14,3 +14,4 @@ Available programs:
 
 %environment
     export PATH=/opt/nanopolish:/opt/ont-guppy-cpu/bin:/opt/nanopolish/minimap2:${PATH}
+
