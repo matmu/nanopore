@@ -19,4 +19,3 @@ A minimap2 index for reference genome Homo_sapiens.GRCh38.dna.primary_assembly.f
 
 %environment
     export PATH=/opt/nanopolish:/opt/ont-guppy-cpu/bin:/opt/nanopolish/minimap2:${PATH}
-
